@@ -14,20 +14,20 @@ from pymongo import  mongo_client
 
 #class MyApp(App):
 client = mongo_client.MongoClient('mongodb://127.0.0.1:27017/')
-print(client)
+#print(client)
 
 db = client.enos
 collection = db.collection
 
 # Insert a document
-collection.insert_one({"name": "Salah", "age": 50})
+collection.insert_many([{"name": "Courtney", "age": 26}, {"name": "Lisa", "age": 50}, {"name": "christen", "age": 25}])
 #print(collection.insert_one({"name": "Alice", "age": 30}))
-print(collection.find())
-print("success")
+#print(collection.find())
+#print("success")
 
 #time.sleep(3)
 
-#client.close()
+client.close()
 
 '''
     def build(self):

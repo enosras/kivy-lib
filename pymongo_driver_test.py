@@ -11,7 +11,7 @@ try:
 
 
     #client.db.
-    client.admin.command("ping")
+    client.enos.command("ping")
     print("Connected successfully")
 
     # other application code
